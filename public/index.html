@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>随机图站点</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <!-- 背景图片网格 -->
+    <div class="background-grid" id="bg-grid"></div>
+    
+    <!-- 主要内容 -->
+    <div class="main-content">
+        <div class="card">
+            <h1>欢迎来到随机图站点</h1>
+            <p>这是一个基于 Cloudflare 的随机图站点。<br>图片URL存储于KV，使用Worker提供服务。</p>
+            <p class="special-thanks">特别鸣谢：Cloudflare</p>
+            <div class="button-group">
+                <a href="/api/random?type=vertical" target="_blank" class="btn">竖屏随机图</a>
+                <a href="/api/random?type=horizontal" target="_blank" class="btn">横屏随机图</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 交互脚本 -->
+    <script src="/script.js"></script>
+</body>
+</html>
